@@ -1,0 +1,135 @@
+.app__header{
+    position: sticky;
+    top: 0;
+    z-index: 10;    
+    padding: 0 100px;
+    height: 80px;
+    width: 100%;
+    background: #f1f8fc;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* background: linear-gradient(147deg, #151e26 0%, #2c3e50 75%); */
+    /* color: #fff; */
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*************************** HEADER LOGO ********************************/
+
+.header__logo{
+    display: flex;
+    flex: calc(1/3);
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.header__logoIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-right: 15px;
+    box-shadow: rgb(0 0 0 / 10%) 1px 5px 10px;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.header__logoIcon > .material-icons-outlined{
+    font-size: 30px;
+    color: #000;
+}
+
+.header__logoName{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+}
+
+.header__logoName > span:nth-child(1){
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.header__logoName > span:nth-child(2){
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/*************************** HEADER NAVBAR ********************************/
+
+.app__headerNav{
+    display: flex;
+    /* flex: calc(1/3); */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header__navBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    margin: 0 10px;
+    width: 80px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.header__navRunner{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 60px;
+    margin: 0 20px;
+    height: 4px;
+    border-radius: 4px;
+    background: #000;
+    transition: all 0.2s ease;
+}
+
+.header__navBtn:hover{
+    transform: translate(0%, -5%);
+}
+
+/*************************** HEADER BOOK ********************************/
+
+.app__headerBtn{
+    display: flex;
+    flex: calc(1/3);
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__bookBtn{
+    /* font-family: 'Fredoka', sans-serif; */
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 7px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 1px 2px 10px;
+}
+
+.header__bookBtn:hover{
+    transform: translate(0%, -10%);
+    box-shadow: rgb(0 0 0 / 10%) 1px 5px 40px;
+}
+
+.header__bookBtnActive{
+    box-shadow: rgb(0 0 0 / 10%) 1px 5px 40px;
+}
